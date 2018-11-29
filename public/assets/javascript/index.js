@@ -18,13 +18,13 @@ window.addEventListener('scroll', () => {
     transformValue = `scale(${scrolled})`;
       console.log(scroll, scrolled)
 
-    if (scroll > 1 && scroll < 1400) {  
+    if (scroll > 0 && scroll < 1400) {  
     // if you leave the top of the page, or if you scroll at all increase the font scale. 
     text.style.transform = transformValue;
   } else {
     document.getElementById("grabThis").classList.remove('text');
     document.getElementById("grabThis").classList.add('newText');
-    document.getElementById("grabThis").innerHTML = "Sample Text";
+    document.getElementById("grabThis").innerHTML = "STATIC TEST SAMPLE TEXT TO SEE IF THIS WORKS";
     
   }
 })
