@@ -18,13 +18,20 @@ window.addEventListener('scroll', () => {
     transformValue = `scale(${scrolled})`;
       console.log(scroll, scrolled)
 
-    if (scroll > 0 && scroll < 1400) {  
-    // if you leave the top of the page, or if you scroll at all increase the font scale. 
-    text.style.transform = transformValue;
-  } else {
-    document.getElementById("grabThis").classList.remove('text');
-    document.getElementById("grabThis").classList.add('newText');
-    document.getElementById("grabThis").innerHTML = "STATIC TEST SAMPLE TEXT TO SEE IF THIS WORKS";
-    
-  }
+      var elem = document.getElementById("grabThis");
+
+      if (scroll < 870) {  
+      // if you leave the top of the page, or if you scroll at all increase the font scale. 
+      text.style.transform = transformValue;
+      elem.style.position = "fixed";
+      elem.style.top = "0px";
+    } else {
+      elem.style.position = "absolute";
+      elem.style.top = "870px";
+      //document.getElementById("grabThis").classList.remove('text');
+      //document.getElementById("grabThis").classList.add('newText');
+      //text.style.transform = "inherit";
+      //document.getElementById("grabThis").innerHTML = "STATIC TEST SAMPLE TEXT TO SEE IF THIS WORKS";
+      
+    }
 })
