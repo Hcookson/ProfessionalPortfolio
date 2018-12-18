@@ -20,14 +20,14 @@ window.addEventListener('scroll', () => {
 
       var elem = document.getElementById("grabThis");
 
-      if (scroll < 870) {  
+      if (scroll < 893) {  
       // if you leave the top of the page, or if you scroll at all increase the font scale. 
       text.style.transform = transformValue;
       elem.style.position = "fixed";
       elem.style.top = "0px";
     } else {
       elem.style.position = "absolute";
-      elem.style.top = "870px";
+      elem.style.top = "893px";
       //document.getElementById("grabThis").classList.remove('text');
       //document.getElementById("grabThis").classList.add('newText');
       //text.style.transform = "inherit";
