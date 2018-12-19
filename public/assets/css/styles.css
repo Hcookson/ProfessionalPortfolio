@@ -44,8 +44,6 @@ h2 {
     transform: skew(0deg, -30deg) scaleY(1.33333);
     text-transform: uppercase;
 }
-
-
 .container {
     display: flex;
     color: black;
@@ -84,17 +82,42 @@ h2 {
       font-family: 'Heebo', sans-serif;
       color: #333333;
   }
-  
+  .intro-text {
 
-  .section-content {
-      display: flex;
   }
+  /* end section 1 content */
 
+/* section 2 content */
+  .section-content {
+    
+  }
+ .section2-title {
+    font-size: 72px;
+    font-weight: 800;
+    font-family: 'Heebo', sans-serif;
+    color: #333333;
+ }
   p {
     font-size: 25px;
     line-height: 4;
     color: #333333;
 }
+.img {
+    max-width: 50%;
+    height: 40vh;
+    z-index: 10;
+    margin-top: 35px;
+}
+.z-index-bg {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    background-color: #333333; 
+    margin-left:700px;
+}
+/* end section 2 content*/
+
+/* styling for fade in */
   #test{
     text-align: center;
     border-bottom: 1px #ebebeb solid;
@@ -104,8 +127,23 @@ h2 {
 }
 #test.fade-in {
     opacity: 1;
-    /*transform: translateY(0);*/
+    
 }
+
+#test-2 {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+#test-2.fade-in {
+    opacity: 1;
+    
+}
+
+/* end styling for fade-in */
+
+
 
 
 /* nav-bar */
