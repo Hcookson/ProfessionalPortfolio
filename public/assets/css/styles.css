@@ -103,10 +103,17 @@ h2 {
     color: #333333;
 }
 .img {
-    max-width: 50%;
+    max-width: 100%;
     height: 40vh;
     z-index: 10;
     margin-top: 35px;
+}
+.img-2{
+    max-width: 50%;
+    height: 50vh;
+    z-index: 10;
+    float: right;
+    margin-top:35px;
 }
 .z-index-bg {
     position: absolute;
@@ -114,6 +121,13 @@ h2 {
     height: 500px;
     background-color: #333333; 
     margin-left:700px;
+}
+.z-index-bg-2 {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    background-color: #FF9933; 
+    margin-left: 1200px;
 }
 /* end section 2 content*/
 
